@@ -1,0 +1,94 @@
+@import url('./fonts.css');
+:root{
+  --primaryFont: "Lazydog";
+  --secondaryFont: "Arial";
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: var(--primaryFont);
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+.pf{
+  font-family: var(--primaryFont);
+}
+.sf{
+  font-family: var(--secondaryFont);
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+h1,h2{
+  font-weight: 700;
+}
+a {
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: none;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+textarea:focus-visible {
+  outline: none;
+}
+select:focus-visible {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  max-width: 95%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a,
+button,
+input[type="button"],
+input[type="submit"] {
+  transition: color 0.3s ease, background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 1199.98px) {
+  .container {
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
